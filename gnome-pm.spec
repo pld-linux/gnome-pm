@@ -3,8 +3,9 @@ Name:		gnome-pm
 Version:	0.8.0
 Release:	2
 License:	GPL
-Group:		Applications/Productivity
-Source:		http://tigris.sonicom.net/projects/gnome-pm-%{version}.tar.gz
+Group:		X11/Applications
+Group(pl):	X11/Aplikacje
+Source0:	http://tigris.sonicom.net/projects/%{name}-%{version}.tar.gz
 URL:		http://tigris.sonicom.net/projects/gnome-pm.html
 BuildRequires:	gtk+-devel >= 1.2
 BuildRequires:	gnome-libs >= 1.0
@@ -16,10 +17,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 GnomePM is a small application that collects stock information from
 Yahoo!(c) Finance, and presents it in a easy-to-read list. GnomePM is
-designed to cut back on CPU, memory, and bandwidth usage by eliminating the
-need for a Java enabled Web browser. Many more features are planned for
-GnomePM in the future. Please note, however, that Yahoo!(c) does not support
-this product.
+designed to cut back on CPU, memory, and bandwidth usage by
+eliminating the need for a Java enabled Web browser. Many more
+features are planned for GnomePM in the future. Please note, however,
+that Yahoo!(c) does not support this product.
 
 %prep
 %setup -q
