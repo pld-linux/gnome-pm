@@ -2,7 +2,7 @@ Summary:	A small application that collects stock information from Yahoo!(c)
 Summary(pl):	Ma³a aplikacja zbieraj±ca informacje o notowaniach z Yahoo!(c)
 Name:		gnome-pm
 Version:	0.9.3
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.one.net/pub/users/dobez/%{name}-%{version}.tar.gz
@@ -37,6 +37,7 @@ Yahoo!(c) nie wspiera tego produktu.
 %setup -q
 
 %build
+rm -f missing
 gettextize --copy --force
 aclocal -I macros
 autoconf
