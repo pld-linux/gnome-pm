@@ -26,7 +26,7 @@ that Yahoo!(c) does not support this product.
 %setup -q
 
 %build
-make CFLAGS="`gnome-config --cflags gtk gnome gnomeui` $RPM_OPT_FLAGS" LDFLAGS="-s"
+%{__make} CFLAGS="`gnome-config --cflags gtk gnome gnomeui` $RPM_OPT_FLAGS" LDFLAGS="-s"
 
 %install
 rm -rf $RPM_BUILD_ROOT
