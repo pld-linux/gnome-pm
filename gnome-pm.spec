@@ -1,7 +1,7 @@
 Summary:	A small application that collects stock information from Yahoo!(c)
 Name:		gnome-pm
 Version:	0.9.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
@@ -11,7 +11,7 @@ URL:		http://www.geocities.com/lordzephyroth/gnome-pm.html
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel >= 1.2
 BuildRequires:	gnome-libs >= 1.0
-BuildRequires:	libghttp >= 1.0
+BuildRequires:	libghttp-devel >= 1.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
