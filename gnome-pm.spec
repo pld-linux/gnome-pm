@@ -1,7 +1,7 @@
 Summary:	A small application that collects stock information from Yahoo!(c)
 Name:		gnome-pm
 Version:	0.8.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Group(pl):	X11/Aplikacje
@@ -30,9 +30,9 @@ make CFLAGS="`gnome-config --cflags gtk gnome gnomeui` $RPM_OPT_FLAGS" LDFLAGS="
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_applnkdir}/Applications}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_applnkdir}/Network/Misc}
 install gnome-pm $RPM_BUILD_ROOT%{_bindir}
-install gnome-pm.desktop $RPM_BUILD_ROOT%{_applnkdir}/Applications/gnome-pm.desktop
+install gnome-pm.desktop $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc/gnome-pm.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -40,4 +40,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/gnome-pm
-%{_applnkdir}/Applications/gnome-pm.desktop
+%{_applnkdir}/Network/Misc/gnome-pm.desktop
