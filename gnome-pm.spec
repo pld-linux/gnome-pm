@@ -15,7 +15,6 @@ BuildRequires:	gnome-libs >= 1.0
 BuildRequires:	libghttp-devel >= 1.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 GnomePM is a small application that collects stock information from
