@@ -1,6 +1,6 @@
 Summary:	A small application that collects stock information from Yahoo!(c)
 Name:		gnome-pm
-Version:	0.9.1
+Version:	0.9.2
 Release:	1
 License:	GPL
 Group:		X11/Applications
@@ -35,7 +35,7 @@ gettextize --copy --force
 %install
 rm -rf $RPM_BUILD_ROOT
 
-make install \
+%{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	desktopdir=%{_applnkdir}/Network/Misc
 
