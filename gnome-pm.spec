@@ -1,12 +1,12 @@
 Summary:	A small application that collects stock information from Yahoo!(c)
 Name:		gnome-pm
-Version:	0.8.0
-Release:	2
+Version:	0.8.2
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Group(pl):	X11/Aplikacje
-Source0:	http://tigris.sonicom.net/projects/%{name}-%{version}.tar.gz
-URL:		http://tigris.sonicom.net/projects/gnome-pm.html
+Source0:	http://www.geocities.com/lordzephyroth/%{name}-%{version}.tar.gz
+URL:		http://www.geocities.com/lordzephyroth/gnome-pm.html
 BuildRequires:	gtk+-devel >= 1.2
 BuildRequires:	gnome-libs >= 1.0
 BuildRequires:	libghttp >= 1.0
