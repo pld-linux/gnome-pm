@@ -1,12 +1,14 @@
 Summary:	A small application that collects stock information from Yahoo!(c)
 Name:		gnome-pm
-Version:	0.8.3
+Version:	0.9.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
+Group(de):	X11/Applikationen
 Group(pl):	X11/Aplikacje
 Source0:	http://www.geocities.com/lordzephyroth/%{name}-%{version}.tar.gz
 URL:		http://www.geocities.com/lordzephyroth/gnome-pm.html
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel >= 1.2
 BuildRequires:	gnome-libs >= 1.0
 BuildRequires:	libghttp >= 1.0
@@ -26,13 +28,16 @@ that Yahoo!(c) does not support this product.
 %setup -q
 
 %build
-%{__make} CFLAGS="`gnome-config --cflags gtk gnome gnomeui` $RPM_OPT_FLAGS" LDFLAGS="-s"
+gettextize --copy --force
+%configure
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_applnkdir}/Network/Misc}
-install gnome-pm $RPM_BUILD_ROOT%{_bindir}
-install gnome-pm.desktop $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc/gnome-pm.desktop
+
+make install \
+	DESTDIR=$RPM_BUILD_ROOT \
+	desktopdir=%{_applnkdir}/Network/Misc
 
 %clean
 rm -rf $RPM_BUILD_ROOT
