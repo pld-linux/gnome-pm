@@ -5,11 +5,6 @@ Version:	0.9.3
 Release:	2
 License:	GPL
 Group:		X11/Applications
-Group(de):	X11/Applikationen
-Group(es):	X11/Aplicaciones
-Group(pl):	X11/Aplikacje
-Group(pt_BR):	X11/Aplicações
-Group(pt):	X11/Aplicações
 Source0:	ftp://ftp.one.net/pub/users/dobez/%{name}-%{version}.tar.gz
 URL:		http://dobey.free.fr/gnome-pm/
 BuildRequires:	autoconf
