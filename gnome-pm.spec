@@ -6,6 +6,7 @@ Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.one.net/pub/users/dobez/%{name}-%{version}.tar.gz
+# Source0-md5:	a947488921af395e4ce3c9df0186977b
 URL:		http://dobey.free.fr/gnome-pm/
 BuildRequires:	autoconf
 BuildRequires:	automake
