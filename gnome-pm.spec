@@ -9,10 +9,9 @@ URL:		http://tigris.sonicom.net/projects/gnome-pm.html
 BuildRequires:	gtk+-devel >= 1.2
 BuildRequires:	gnome-libs >= 1.0
 BuildRequires:	libghttp >= 1.0
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
-%define		_applnkdir	%{_datadir}/applnk
 
 %description
 GnomePM is a small application that collects stock information from
