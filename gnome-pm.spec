@@ -1,13 +1,15 @@
 Summary:	A small application that collects stock information from Yahoo!(c)
 Name:		gnome-pm
 Version:	0.9.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
 Group(pl):	X11/Aplikacje
-Source0:	http://www.geocities.com/lordzephyroth/%{name}-%{version}.tar.gz
-URL:		http://www.geocities.com/lordzephyroth/gnome-pm.html
+Source0:	ftp://ftp.one.net/pub/users/dobez/%{name}-%{version}.tar.gz
+URL:		http://dobey.free.fr/gnome-pm/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel >= 1.2
 BuildRequires:	gnome-libs >= 1.0
@@ -29,6 +31,9 @@ that Yahoo!(c) does not support this product.
 
 %build
 gettextize --copy --force
+aclocal -I macros
+autoconf
+automake -a -c
 %configure
 %{__make}
 
