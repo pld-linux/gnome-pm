@@ -38,7 +38,7 @@ Yahoo!(c) nie wspiera tego produktu.
 
 %build
 rm -f missing
-gettextize --copy --force
+%{__gettextize}
 aclocal -I macros
 %{__autoconf}
 %{__automake}
