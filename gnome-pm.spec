@@ -1,7 +1,7 @@
 Summary:	A small application that collects stock information from Yahoo!(c)
 Name:		gnome-pm
 Version:	0.9.2
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
