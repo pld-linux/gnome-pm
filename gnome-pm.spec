@@ -1,5 +1,5 @@
 Summary:	A small application that collects stock information from Yahoo!(c)
-Summary(pl):	Ma³a aplikacja zbieraj±ca informacje o notowaniach z Yahoo!(c)
+Summary(pl.UTF-8):   MaÅ‚a aplikacja zbierajÄ…ca informacje o notowaniach z Yahoo!(c)
 Name:		gnome-pm
 Version:	0.9.3
 Release:	3
@@ -25,12 +25,12 @@ eliminating the need for a Java enabled Web browser. Many more
 features are planned for GnomePM in the future. Please note, however,
 that Yahoo!(c) does not support this product.
 
-%description -l pl
-GnomePM to ma³a aplikacja zbieraj±ca informacje o notowaniach z
-serwisu Yahoo!(c) Finance i prezentuj±ca je jako czyteln± listê.
-GnomePM zosta³ zaprojektowany by zmniejszyæ u¿ycie procesora, pamiêci
-i sieci poprzez wyeliminowanie potrzeby u¿ywania przegl±darki WWW z
-obs³ug± Javy. S± planowane w przysz³o¶ci nowe mo¿liwo¶ci. Uwaga:
+%description -l pl.UTF-8
+GnomePM to maÅ‚a aplikacja zbierajÄ…ca informacje o notowaniach z
+serwisu Yahoo!(c) Finance i prezentujÄ…ca je jako czytelnÄ… listÄ™.
+GnomePM zostaÅ‚ zaprojektowany by zmniejszyÄ‡ uÅ¼ycie procesora, pamiÄ™ci
+i sieci poprzez wyeliminowanie potrzeby uÅ¼ywania przeglÄ…darki WWW z
+obsÅ‚ugÄ… Javy. SÄ… planowane w przyszÅ‚oÅ›ci nowe moÅ¼liwoÅ›ci. Uwaga:
 Yahoo!(c) nie wspiera tego produktu.
 
 %prep
