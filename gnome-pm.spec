@@ -1,5 +1,5 @@
 Summary:	A small application that collects stock information from Yahoo!(c)
-Summary(pl.UTF-8):   Mała aplikacja zbierająca informacje o notowaniach z Yahoo!(c)
+Summary(pl.UTF-8):	Mała aplikacja zbierająca informacje o notowaniach z Yahoo!(c)
 Name:		gnome-pm
 Version:	0.9.3
 Release:	3
