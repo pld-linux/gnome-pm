@@ -10,7 +10,7 @@ Source0:	ftp://ftp.one.net/pub/users/dobez/%{name}-%{version}.tar.gz
 URL:		http://dobey.free.fr/gnome-pm/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+-devel >= 1.2
 BuildRequires:	gnome-libs >= 1.0
 BuildRequires:	libghttp-devel >= 1.0
